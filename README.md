@@ -6,13 +6,13 @@ ALASIGHT
 A tool for detecting signatures of horizontal gene transfer, which might signal the presence of Mobile Genetic Elements (MGEs) using alamem and phylogenetic divergence analysis.
 ## Overview
 
-Alasight finds signatures of horizontal gene transfer by using alamem to in parallel find all hits across a GTDB database, applying divergence filtering, and then running an overlap-divergence filter to identify regions supported by alignments to distantly related species. It uses the TimeTree of Life to calculate divergence times and skani for average nucleotide identity (ANI) lookups. We designed this tool to use HGT to find novel MGEs that do not look like reference MGE databases, by doing a string similarity search across entire bacterial genome databases.
+Alasight finds signatures of horizontal gene transfer by using alamem to find all hits if a query sequence across a GTDB database, applying divergence filtering, and then running an overlap-divergence filter to identify regions supported by alignments to distantly related species. It uses the TimeTree of Life to calculate divergence times, and skani for average nucleotide identity (ANI) lookups. We designed this tool to detect HGT signatures, with the goal to find novel MGEs that may not be within a reference MGE databases. We do so by doing a string similarity search across entire bacterial genome databases.
 
 ## Installation
 Install alasight:
 ```bash
-git clone https://github.com/graceoualline/medival.git
-cd medival
+git clone https://github.com/graceoualline/alasight.git
+cd alasight
 ```
 
 We have included in the references folder a species conversion table for GTDB r214 reference genomes to NCBI annotations, though you will have to unxz it. This allows us to map those hits onto the TimeTree of Life (also included) for divergence computations.
