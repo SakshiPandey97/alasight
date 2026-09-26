@@ -2,7 +2,7 @@
 # Build a full GTDB r214 database
 #
 # Usage:  bash build_gtdb_db.sh <workdir> [threads]
-#   <workdir> = any directory with ~80+ GB free
+
 set -euo pipefail
 
 WORK="${1:?usage: build_gtdb_db.sh <workdir> [threads]}"
