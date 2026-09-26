@@ -19,7 +19,7 @@ conda activate alasight
 `setup.sh` creates the `alasight` conda environment required to run the software, downloads the prebuilt **alamem** aligner, and decompresses required reference files shipped in `references-compressed/`
 (the TimeTree of Life newick and the GTDB-NCBI species table). 
 
-### Alamem
+### alamem
 
 alamem is required (alasight calls it internally). `setup.sh` installs it automatically.
 
