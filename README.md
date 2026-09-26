@@ -6,6 +6,10 @@ A tool for detecting signatures of horizontal gene transfer, which might signal 
 
 Alasight finds signatures of horizontal gene transfer by using alamem to find all hits of a query sequence across a GTDB database, applying divergence filtering, and then running an overlap-divergence filter to identify regions supported by alignments to distantly related species. It uses the TimeTree of Life to calculate divergence times, and skani for average nucleotide identity (ANI) lookups. We designed this tool to detect HGT signatures, with the goal of finding novel MGEs that may not be within a reference MGE databases. 
 
+## Requirements
+
+- **conda** — `setup.sh` uses it to create the environment.
+
 ## Installation
 
 ```bash
@@ -16,7 +20,7 @@ export PATH="$HOME/bin:$PATH"
 conda activate alasight
 ```
 
-`setup.sh` creates the `alasight` conda environment required to run the software, downloads the prebuilt **alamem** aligner, and decompresses required reference files shipped in `references-compressed/`
+`setup.sh` creates the `alasight` conda environment required to run the software, downloads the prebuilt alamem aligner, and decompresses required reference files shipped in `references-compressed/`
 (the TimeTree of Life newick and the GTDB-NCBI species table). 
 
 ### alamem
