@@ -125,7 +125,7 @@ output_directory/
 ```
 
 
-The `_dust_regions*` files are the final output (after low-complexity masking); the `_clustered_regions*` files are the same regions before DUST masking. All files begin with a `#`-prefixed configuration header recording the run's parameters and timestamp.
+The `_dust_regions*` files are the final output (after low-complexity masking); the `_clustered_regions*` files are the same regions before dustmasking. All files begin with a `#`-prefixed configuration header recording the run's parameters and timestamp.
 
 
 ### Resume Functionality
